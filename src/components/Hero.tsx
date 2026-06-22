@@ -19,16 +19,16 @@ export function Hero() {
         <div className="lg:col-span-7 z-10 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-1 rounded-full bg-primary/5 border border-primary/10">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 divas transformadas</span>
+            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 transformações realizadas</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
-            Vai continuar só <br />
-            <span className="italic font-body font-light text-foreground opacity-90">pensando, bb?</span>
+            Beleza natural <br />
+            <span className="italic font-body font-light text-foreground opacity-90">com elegância.</span>
           </h1>
 
           <p className="text-xl md:text-2xl font-body text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Maquiagem Profissional e a técnica de elite que seu olhar merece. Proporção, alinhamento e naturalidade <span className="text-primary font-bold">SEM CONDIÇÕES</span>.
+            Especialista em Brow Lamination, Lash Lifting e Design Estratégico. Técnica de elite e visagismo para um olhar limpo e sofisticado.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
