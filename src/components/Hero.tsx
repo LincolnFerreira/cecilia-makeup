@@ -22,8 +22,8 @@ export function Hero() {
             <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 transformações realizadas</span>
           </div>
           
-          <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
-            CECILIA SOUSA <br />
+          <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] mb-8 tracking-tighter">
+            <span className="text-foreground">CECILIA SOUSA</span> <br />
             <span className="italic font-body font-light text-foreground opacity-90">Maquiadora Profissional.</span>
           </h1>
 
