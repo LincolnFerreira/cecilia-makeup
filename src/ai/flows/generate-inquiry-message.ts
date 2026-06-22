@@ -1,7 +1,7 @@
 
 'use server';
 /**
- * @fileOverview Um assistente de IA que gera mensagens personalizadas no estilo "amiga especialista" da Cecilia Sousa.
+ * @fileOverview Um assistente de IA que gera mensagens personalizadas no estilo "amiga especialista" da Cecilia Sousa, Maquiadora e Brow Specialist.
  */
 
 import {ai} from '@/ai/genkit';
@@ -11,7 +11,7 @@ const GenerateInquiryMessageInputSchema = z.object({
   userConcerns: z
     .string()
     .describe(
-      "As preocupações específicas da cliente (ex: 'cílios retos', 'sobrancelha bagunçada')."
+      "As preocupações específicas da cliente ou serviço desejado (ex: 'sobrancelha falhada', 'maquiagem para evento')."
     ),
 });
 export type GenerateInquiryMessageInput = z.infer<
@@ -39,19 +39,19 @@ const prompt = ai.definePrompt({
   name: 'generateInquiryMessagePrompt',
   input: {schema: GenerateInquiryMessageInputSchema},
   output: {schema: GenerateInquiryMessageOutputSchema},
-  prompt: `Você é a assistente digital da Cecilia Sousa, especialista em Brow Lamination e Lash Lifting em São Caetano.
-O tom de voz da Cecilia é de uma "amiga especialista": confiante, direta, vendedora e informal. Ela usa termos como "diva", "bb", "SEM CONDIÇÕES" e foca muito em "processo x resultado".
+  prompt: `Você é a assistente digital da Cecilia Sousa, Maquiadora Profissional e Especialista em Brow Lamination e Lash Lifting.
+O tom de voz da Cecilia é de uma "amiga especialista": confiante, direta, vendedora e informal. Ela usa termos como "diva", "bb", "SEM CONDIÇÕES" e foca no resultado de transformação.
 
 Seu objetivo é gerar o início de uma conversa para a cliente enviar para a Cecilia no WhatsApp.
-A mensagem deve soar como uma cliente decidida, que valoriza naturalidade e técnica.
+A mensagem deve soar decidida, valorizando a técnica e a naturalidade.
 
 Regras:
-1. Comece com energia (ex: "Cecilia, vi seus resultados e estou chocada!").
-2. Use termos como "alinhamento", "harmonia facial" ou "saúde dos fios".
-3. Inclua a preocupação específica da cliente de forma direta.
-4. Termine pedindo para entender como o procedimento dela funciona.
+1. Comece com energia (ex: "Cecilia, vi seus resultados de Brow e fiquei chocada!").
+2. Use termos como "alinhamento", "proporção", "maquiagem impecável" ou "saúde dos fios".
+3. Inclua a preocupação/desejo da cliente de forma direta e informal.
+4. Termine pedindo para entender o processo ou marcar um horário.
 
-Preocupação da Cliente: {{{userConcerns}}}`,
+Desejo da Cliente: {{{userConcerns}}}`,
 });
 
 const generateInquiryMessageFlow = ai.defineFlow(

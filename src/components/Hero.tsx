@@ -19,7 +19,7 @@ export function Hero() {
         <div className="lg:col-span-7 z-10 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-1 rounded-full bg-primary/5 border border-primary/10">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 olhares transformados</span>
+            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 divas transformadas</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl font-body text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Elegância, proporção e o alinhamento que seu olhar merece. Técnica de elite para quem busca naturalidade <span className="text-primary font-bold">SEM CONDIÇÕES</span>.
+            Maquiagem Profissional e a técnica de elite que seu olhar merece. Proporção, alinhamento e naturalidade <span className="text-primary font-bold">SEM CONDIÇÕES</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
@@ -42,13 +42,13 @@ export function Hero() {
 
           <div className="mt-16 flex items-center gap-8 border-t border-primary/10 pt-8 max-w-md">
             <div>
-              <div className="text-2xl font-headline text-primary">Brow & Lash</div>
-              <div className="text-[10px] uppercase tracking-widest opacity-60">Especialista em Alinhamento</div>
+              <div className="text-2xl font-headline text-primary">Maquiadora</div>
+              <div className="text-[10px] uppercase tracking-widest opacity-60">Profissional & Social</div>
             </div>
             <div className="h-12 w-px bg-primary/10" />
             <div>
-              <div className="text-2xl font-headline text-primary">São Caetano</div>
-              <div className="text-[10px] uppercase tracking-widest opacity-60">Atendimento @makeupjaque</div>
+              <div className="text-2xl font-headline text-primary">Brow & Lash</div>
+              <div className="text-[10px] uppercase tracking-widest opacity-60">Especialista em Alinhamento</div>
             </div>
           </div>
         </div>
@@ -58,11 +58,11 @@ export function Hero() {
           <div className="relative w-full h-full rounded-2xl overflow-hidden shadow-2xl">
             <Image 
               src={heroImg?.imageUrl || ""} 
-              alt="Cecilia Sousa Professional Portrait"
+              alt="Cecilia Sousa Maquiadora Profissional"
               fill
               className="object-cover scale-105 hover:scale-100 transition-transform duration-1000"
               priority
-              data-ai-hint="professional beauty woman"
+              data-ai-hint="professional makeup artist"
             />
           </div>
         </div>

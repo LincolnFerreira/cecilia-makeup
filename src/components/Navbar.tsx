@@ -22,9 +22,12 @@ export function Navbar() {
     )}>
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <Link href="/" className="group">
-          <h1 className="text-2xl font-headline tracking-tighter text-primary">
-            CECILIA SOUSA <span className="font-body italic text-sm opacity-50 block -mt-1 group-hover:opacity-100 transition-opacity">Harmonia do Olhar</span>
-          </h1>
+          <div className="flex flex-col">
+            <h1 className="text-2xl font-headline tracking-tighter text-primary leading-tight">
+              CECILIA SOUSA
+            </h1>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-primary/60 font-headline">Maquiadora & Brow Specialist</span>
+          </div>
         </Link>
 
         <div className="hidden md:flex items-center gap-12 font-headline text-sm uppercase tracking-widest">

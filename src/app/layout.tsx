@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Cecilia Sousa | Brow & Lash Specialist',
-  description: 'Especialista em Brow Lamination, Lash Lifting e Design de Sobrancelhas em São Caetano do Sul. +1000 olhares transformados com naturalidade e elegância.',
+  title: 'Cecilia Sousa | Maquiadora & Brow Specialist',
+  description: 'Maquiadora Profissional e Especialista em Brow Lamination, Lash Lifting e Design Estratégico em São Caetano do Sul. +1000 transformações com técnica e elegância.',
 };
 
 export default function RootLayout({

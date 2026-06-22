@@ -10,23 +10,30 @@ const services = [
   {
     id: "brow-lamination",
     title: "Brow Lamination",
-    description: "Para quem busca sobrancelhas alinhadas, volumosas e com aspecto saudável. Técnica que trata a saúde dos fios enquanto revela o potencial máximo do seu olhar.",
-    tag: "Saúde & Estética",
+    description: "Técnica de elite para sobrancelhas alinhadas, volumosas e com saúde. O foco é tratar os fios enquanto revelamos o potencial máximo do seu olhar.",
+    tag: "Saúde & Técnica",
     imgId: "brow-lamination"
   },
   {
     id: "lash-lifting",
     title: "Lash Lifting",
-    description: "Cílios curvados, hidratados e pretinhos com total naturalidade. O foco aqui é praticidade e elegância no dia a dia, valorizando o que você já tem.",
-    tag: "Olhar Revelado",
+    description: "Cílios curvados, hidratados e pretinhos. Praticidade e elegância para o seu dia a dia, mantendo a naturalidade que você ama.",
+    tag: "Alinhamento Real",
     imgId: "lash-lifting"
   },
   {
-    id: "design-visagismo",
+    id: "design-estrategico",
     title: "Design Estratégico",
-    description: "Sem moldes prontos. Uso visagismo, proporção e a harmonia do seu rosto para criar um design exclusivo que valoriza sua beleza única.",
-    tag: "Proporção Real",
+    description: "Sem moldes prontos. Uso visagismo e proporção para criar um design exclusivo que valoriza a harmonia única do seu rosto.",
+    tag: "Proporção & Visagismo",
     imgId: "brow-design"
+  },
+  {
+    id: "maquiagem-profissional",
+    title: "Maquiagem Social",
+    description: "Beleza sofisticada para seus momentos especiais. Acabamento limpo e técnica profissional para realçar sua melhor versão.",
+    tag: "Beleza Premium",
+    imgId: "hero-portrait"
   }
 ]
 
@@ -36,17 +43,17 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Técnica, Saúde e Harmonia</h2>
+            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Técnica, Saúde e Transformação</h2>
             <h3 className="text-5xl md:text-7xl font-headline tracking-tighter text-primary">
               Beleza Natural com <span className="italic font-body text-foreground">Acabamento Elegante</span>
             </h3>
           </div>
           <p className="text-lg font-body text-muted-foreground max-w-sm mb-2">
-            Minha missão é revelar sua melhor versão através de um olhar sofisticado e limpo. Naturalidade é a regra aqui, bb.
+            Minha missão é revelar sua melhor versão através de um olhar limpo e sofisticado. Naturalidade é a regra aqui, bb.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, idx) => {
             const img = PlaceHolderImages.find(i => i.id === service.imgId)
             return (
@@ -57,7 +64,7 @@ export function Services() {
                     alt={service.title}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
-                    data-ai-hint={img?.imageHint}
+                    data-ai-hint={img?.imageHint || "beauty service"}
                   />
                   <div className="absolute top-6 left-6 bg-background/80 backdrop-blur-md px-4 py-1.5 rounded-full text-[10px] font-headline uppercase tracking-widest">
                     {service.tag}
@@ -65,8 +72,8 @@ export function Services() {
                 </div>
                 <div>
                   <div className="text-xs opacity-40 font-headline mb-2">0{idx + 1}</div>
-                  <h4 className="text-3xl font-headline text-primary mb-4">{service.title}</h4>
-                  <p className="text-muted-foreground leading-relaxed">{service.description}</p>
+                  <h4 className="text-2xl font-headline text-primary mb-4 leading-tight">{service.title}</h4>
+                  <p className="text-sm text-muted-foreground leading-relaxed">{service.description}</p>
                 </div>
               </Card>
             )
