@@ -10,29 +10,29 @@ const services = [
   {
     id: "brow-lamination",
     title: "Brow Lamination",
-    description: "Técnica de elite para sobrancelhas alinhadas, volumosas e com saúde. O foco é tratar os fios enquanto revelamos o potencial máximo do seu olhar.",
+    description: "Técnica de elite para sobrancelhas alinhadas e volumosas. Foco total na saúde dos fios e na texturização para um resultado elegante.",
     tag: "Saúde & Técnica",
     imgId: "brow-lamination"
   },
   {
     id: "lash-lifting",
     title: "Lash Lifting",
-    description: "Cílios curvados, hidratados e pretinhos. Praticidade e elegância para o seu dia a dia, mantendo a naturalidade que você ama.",
-    tag: "Alinhamento Real",
+    description: "Cílios curvados, hidratados e realçados com naturalidade. Praticidade e sofisticação para o olhar no dia a dia.",
+    tag: "Curvatura Natural",
     imgId: "lash-lifting"
   },
   {
     id: "design-estrategico",
     title: "Design Estratégico",
-    description: "Sem moldes prontos. Uso visagismo e proporção para criar um design exclusivo que valoriza a harmonia única do seu rosto.",
-    tag: "Proporção & Visagismo",
+    description: "Uso de visagismo e proporção facial para criar um design exclusivo que valoriza a harmonia única do seu rosto.",
+    tag: "Visagismo & Proporção",
     imgId: "brow-design"
   },
   {
     id: "maquiagem-profissional",
-    title: "Maquiagem Social",
-    description: "Beleza sofisticada para seus momentos especiais. Acabamento limpo e técnica profissional para realçar sua melhor versão.",
-    tag: "Beleza Premium",
+    title: "Maquiagem Profissional",
+    description: "Beleza sofisticada e técnica para eventos e momentos especiais. Acabamento limpo que realça sua melhor versão.",
+    tag: "Beleza de Elite",
     imgId: "hero-portrait"
   }
 ]
@@ -43,13 +43,13 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Técnica, Saúde e Transformação</h2>
+            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Autoridade e Transformação</h2>
             <h3 className="text-5xl md:text-7xl font-headline tracking-tighter text-primary">
-              Beleza Natural com <span className="italic font-body text-foreground">Acabamento Elegante</span>
+              Técnica Avançada para uma <span className="italic font-body text-foreground">Beleza Sofisticada</span>
             </h3>
           </div>
           <p className="text-lg font-body text-muted-foreground max-w-sm mb-2">
-            Minha missão é revelar sua melhor versão através de um olhar limpo e sofisticado. Naturalidade é a regra aqui, bb.
+            Especialista em transformar olhares através do alinhamento, proporção e saúde dos fios. Naturalidade com técnica de elite.
           </p>
         </div>
 

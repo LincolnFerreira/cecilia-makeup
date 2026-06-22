@@ -23,18 +23,18 @@ export function Hero() {
           </div>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
-            Beleza natural <br />
-            <span className="italic font-body font-light text-foreground opacity-90">com elegância.</span>
+            CECILIA SOUSA <br />
+            <span className="italic font-body font-light text-foreground opacity-90">Maquiadora Profissional.</span>
           </h1>
 
           <p className="text-xl md:text-2xl font-body text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Especialista em Brow Lamination, Lash Lifting e Design Estratégico. Técnica de elite e visagismo para um olhar limpo e sofisticado.
+            Especialista em Brow Lamination, Lash Lifting e Design Estratégico em São Caetano do Sul. Técnica de elite e visagismo para um olhar sofisticado e natural.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
             <Link href="#booking">
               <button className="bg-primary text-primary-foreground px-10 py-5 rounded-full font-headline text-lg uppercase tracking-widest flex items-center justify-center gap-3 hover:gap-5 transition-all shadow-xl hover:shadow-primary/20">
-                Garantir meu horário
+                Agendar Atendimento
                 <ChevronRight className="w-5 h-5" />
               </button>
             </Link>
@@ -43,11 +43,11 @@ export function Hero() {
           <div className="mt-16 flex items-center gap-8 border-t border-primary/10 pt-8 max-w-md">
             <div>
               <div className="text-2xl font-headline text-primary">Maquiadora</div>
-              <div className="text-[10px] uppercase tracking-widest opacity-60">Profissional & Social</div>
+              <div className="text-[10px] uppercase tracking-widest opacity-60">Social & Profissional</div>
             </div>
             <div className="h-12 w-px bg-primary/10" />
             <div>
-              <div className="text-2xl font-headline text-primary">Brow & Lash</div>
+              <div className="text-2xl font-headline text-primary">Brow Specialist</div>
               <div className="text-[10px] uppercase tracking-widest opacity-60">Especialista em Alinhamento</div>
             </div>
           </div>

@@ -3,49 +3,49 @@
     {
       "id": "hero-portrait",
       "description": "Retrato oficial da Maquiadora Profissional Cecilia Sousa",
-      "imageUrl": "/images/hero-portrait.jpg",
+      "imageUrl": "/images/foto-cecilia.jpg",
       "imageHint": "professional makeup artist"
     },
     {
       "id": "brow-lamination",
-      "description": "Procedimento técnico de Brow Lamination",
+      "description": "Procedimento técnico de Brow Lamination focado na saúde dos fios",
       "imageUrl": "/images/brow-lamination.jpg",
       "imageHint": "brow lamination"
     },
     {
       "id": "lash-lifting",
-      "description": "Efeito natural do Lash Lifting profissional",
+      "description": "Efeito natural e sofisticado do Lash Lifting profissional",
       "imageUrl": "/images/lash-lifting.jpg",
       "imageHint": "lash lifting"
     },
     {
       "id": "brow-design",
-      "description": "Design Estratégico com Visagismo",
-      "imageUrl": "/images/brow-design.jpg",
+      "description": "Design Estratégico com Visagismo e Proporção",
+      "imageUrl": "/images/design-sobrancelhas.jpg",
       "imageHint": "eyebrow design"
     },
     {
       "id": "gallery-before",
-      "description": "Estado inicial das sobrancelhas",
-      "imageUrl": "/images/gallery-before.jpg",
+      "description": "Estado inicial das sobrancelhas antes do procedimento",
+      "imageUrl": "/images/antes.jpg",
       "imageHint": "eyebrows before"
     },
     {
       "id": "gallery-after",
-      "description": "Resultado após técnica de elite",
-      "imageUrl": "/images/gallery-after.jpg",
+      "description": "Resultado após aplicação de técnica de elite",
+      "imageUrl": "/images/depois.jpg",
       "imageHint": "eyebrows after"
     },
     {
       "id": "client-testimonial-1",
-      "description": "Cliente após Maquiagem Social",
-      "imageUrl": "/images/client-1.jpg",
+      "description": "Cliente com maquiagem profissional social",
+      "imageUrl": "/images/cliente-1.jpg",
       "imageHint": "smiling woman"
     },
     {
       "id": "client-testimonial-2",
-      "description": "Cliente com olhar valorizado",
-      "imageUrl": "/images/client-2.jpg",
+      "description": "Cliente com olhar valorizado por técnica profissional",
+      "imageUrl": "/images/cliente-2.jpg",
       "imageHint": "beauty portrait"
     }
   ]

@@ -10,10 +10,10 @@ export function Footer() {
           <div className="md:col-span-1">
             <h2 className="text-2xl font-headline tracking-tighter text-primary mb-6 uppercase leading-tight">
               CECILIA SOUSA <br />
-              <span className="text-xs opacity-50 tracking-widest">Maquiadora & Specialist</span>
+              <span className="text-xs opacity-50 tracking-widest">Maquiadora Profissional</span>
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Especialista em Brow Lamination, Lash Lifting e Maquiagem Profissional em São Caetano do Sul. Foco em naturalidade, técnica e saúde dos fios.
+              Especialista em Brow Lamination, Lash Lifting e Design Estratégico. Atendimento técnico e visagismo personalizado em São Caetano do Sul.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 opacity-40" />
-                @ceciliasousabeauty
+                @ceciliasousa____
               </li>
             </ul>
           </div>
@@ -35,14 +35,14 @@ export function Footer() {
           <div>
             <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Atendimento</h3>
             <ul className="space-y-2 text-sm font-body">
-              <li>Seg - Sex: Horários Flexíveis</li>
-              <li>Sábados: Sob Agendamento</li>
-              <li className="opacity-40 italic">Vem ficar linda, bb! Garanta seu horário.</li>
+              <li>Seg - Sex: Sob Agendamento</li>
+              <li>Sábados: Horários Especiais</li>
+              <li className="opacity-40 italic">Transforme seu olhar com técnica de elite.</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Acompanhe</h3>
+            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Conecte-se</h3>
             <div className="flex gap-4">
               <Link href="https://www.instagram.com/ceciliasousa____/" target="_blank" className="w-10 h-10 rounded-full border border-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />

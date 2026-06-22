@@ -9,14 +9,14 @@ import { Card } from "@/components/ui/card"
 const steps = [
   {
     id: 1,
-    title: "Qual o seu objetivo?",
-    options: ["Naturalidade total", "Definição marcante", "Praticidade no dia a dia", "Corrigir falhas"],
+    title: "Qual o seu objetivo principal?",
+    options: ["Naturalidade e Harmonia", "Definição Técnica", "Praticidade Diária", "Correção de Design"],
     icon: <Sparkles className="w-6 h-6" />
   },
   {
     id: 2,
-    title: "Já realizou algum procedimento?",
-    options: ["Nunca fiz", "Já fiz há muito tempo", "Procuro manutenção", "Tive má experiência"],
+    title: "Histórico de procedimentos:",
+    options: ["Nunca realizei", "Manutenção regular", "Busco reabilitação", "Maquiagem para evento"],
     icon: <Heart className="w-6 h-6" />
   }
 ]
@@ -32,8 +32,7 @@ export function BookingFunnel() {
     if (currentStep < steps.length - 1) {
       setCurrentStep(currentStep + 1)
     } else {
-      // Finalize and redirect
-      const message = `Olá Cecilia! Gostaria de agendar um atendimento. Meus objetivos: ${newSelections.join(", ")}.`
+      const message = `Olá Cecilia! Gostaria de agendar um atendimento profissional. Meus objetivos: ${newSelections.join(", ")}.`
       window.open(`https://wa.me/5500000000000?text=${encodeURIComponent(message)}`, '_blank')
     }
   }
@@ -43,9 +42,9 @@ export function BookingFunnel() {
       <div className="max-w-4xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-headline mb-6">Pronta para transformar seu olhar?</h2>
+            <h2 className="text-4xl md:text-5xl font-headline mb-6">Pronta para elevar sua beleza?</h2>
             <p className="text-primary-foreground/80 text-lg mb-8">
-              Responda duas perguntas rápidas para que eu possa preparar o melhor atendimento personalizado para você.
+              Inicie seu agendamento respondendo a estas questões para que eu possa planejar sua consultoria de visagismo personalizada.
             </p>
             <div className="flex items-center gap-4 text-sm uppercase tracking-widest font-headline opacity-60">
               <span className={currentStep === 0 ? "opacity-100 font-bold" : ""}>01. Objetivo</span>
