@@ -9,19 +9,19 @@
     {
       "id": "brow-lamination",
       "description": "Procedimento técnico de Brow Lamination focado na saúde dos fios",
-      "imageUrl": "/images/brow-lamination.jpg",
+      "imageUrl": "/images/browlamination.jpeg",
       "imageHint": "brow lamination"
     },
     {
       "id": "lash-lifting",
       "description": "Efeito natural e sofisticado do Lash Lifting profissional",
-      "imageUrl": "/images/lash-lifting.jpg",
+      "imageUrl": "/images/lash-lifting.jpeg",
       "imageHint": "lash lifting"
     },
     {
       "id": "brow-design",
       "description": "Design Estratégico com Visagismo e Proporção",
-      "imageUrl": "/images/design-estrategico.jpg",
+      "imageUrl": "/images/design-sobrancelhas.jpeg",
       "imageHint": "eyebrow design"
     },
     {
@@ -39,13 +39,13 @@
     {
       "id": "client-testimonial-1",
       "description": "Cliente com maquiagem profissional social",
-      "imageUrl": "/images/cliente-1.jpg",
+      "imageUrl": "/images/foto-cecilia.jpg",
       "imageHint": "smiling woman"
     },
     {
       "id": "client-testimonial-2",
       "description": "Cliente com olhar valorizado por técnica profissional",
-      "imageUrl": "/images/cliente-2.jpg",
+      "imageUrl": "/images/design-sobrancelhas.jpeg",
       "imageHint": "beauty portrait"
     }
   ]
