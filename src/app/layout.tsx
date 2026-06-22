@@ -3,8 +3,8 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Cecilia Sousa: Harmonia do Olhar',
-  description: 'Especialista em Brow Lamination, Lash Lifting e Design de Sobrancelhas. Realce sua beleza natural com técnica e sofisticação.',
+  title: 'Cecilia Sousa | Brow & Lash Specialist',
+  description: 'Especialista em Brow Lamination, Lash Lifting e Design de Sobrancelhas em São Caetano do Sul. +1000 olhares transformados com naturalidade e elegância.',
 };
 
 export default function RootLayout({

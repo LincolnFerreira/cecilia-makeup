@@ -36,11 +36,11 @@ export function InquiryAssistant() {
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent text-primary text-sm font-headline mb-4">
             <Sparkles className="w-4 h-4" />
-            Concierge Digital
+            Concierge das Divas
           </div>
-          <h2 className="text-4xl md:text-5xl font-headline mb-4">Dúvidas sobre o seu Olhar?</h2>
+          <h2 className="text-4xl md:text-5xl font-headline mb-4">Dúvida sobre qual técnica escolher?</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Compartilhe suas inseguranças ou o que gostaria de melhorar. Nossa IA gerará um ponto de partida personalizado para sua consultoria com a Cecilia.
+            Me conta o que te incomoda ou qual resultado você sonha. Vou te ajudar a dar o primeiro passo para o olhar dos sonhos.
           </p>
         </div>
 
@@ -48,10 +48,10 @@ export function InquiryAssistant() {
           <Card className="p-6 border-dashed flex flex-col justify-between">
             <div>
               <label className="text-sm font-headline uppercase tracking-widest block mb-3 opacity-70">
-                O que te incomoda hoje?
+                O que você quer mudar hoje?
               </label>
               <Textarea 
-                placeholder="Ex: Minhas sobrancelhas são ralas e tenho medo de que qualquer procedimento fique artificial..."
+                placeholder="Ex: Meus cílios são retos e minhas sobrancelhas estão muito rebeldes..."
                 className="min-h-[150px] resize-none mb-4 focus:ring-primary/20"
                 value={concern}
                 onChange={(e) => setConcern(e.target.value)}
@@ -63,7 +63,7 @@ export function InquiryAssistant() {
               disabled={loading || !concern}
             >
               {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Sparkles className="w-5 h-5" />}
-              Gerar Início de Conversa
+              Gerar Minha Mensagem
             </Button>
           </Card>
 
@@ -71,10 +71,10 @@ export function InquiryAssistant() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <MessageSquare className="w-5 h-5 text-primary" />
-                <span className="text-sm font-headline uppercase tracking-widest opacity-70">Sua solicitação de consultoria</span>
+                <span className="text-sm font-headline uppercase tracking-widest opacity-70">Sua Consultoria Começa Aqui</span>
               </div>
               <div className="bg-muted/30 p-4 rounded-lg italic text-muted-foreground min-h-[120px] text-sm leading-relaxed">
-                {generatedMessage || "O texto sugerido para Cecilia aparecerá aqui..."}
+                {generatedMessage || "Sua mensagem personalizada aparecerá aqui, bb..."}
               </div>
             </div>
             
@@ -85,7 +85,7 @@ export function InquiryAssistant() {
                 onClick={handleSend}
               >
                 <Send className="w-5 h-5" />
-                Iniciar Atendimento no WhatsApp
+                Chamar a Cecilia no Whats
               </Button>
             )}
           </Card>

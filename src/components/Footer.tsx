@@ -12,20 +12,17 @@ export function Footer() {
               CECILIA SOUSA
             </h2>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Dedicada à arte de harmonizar o olhar com técnica, elegância e naturalidade. Sediada em São Paulo, atendendo clientes que buscam excelência.
+              Transformando olhares em São Caetano do Sul. Foco em naturalidade, técnica e saúde dos fios. +1000 clientes que revelaram sua melhor versão.
             </p>
           </div>
 
           <div>
-            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Contato</h3>
+            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Onde estamos</h3>
             <ul className="space-y-4 text-sm font-body">
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 opacity-40" />
-                (11) 99999-9999
-              </li>
-              <li className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 opacity-40" />
-                Av. Paulista, 1000 - CJ 12
+                São Caetano do Sul, SP <br />
+                <span className="text-[10px] opacity-60 ml-7">Atendimento na @makeupjaque</span>
               </li>
               <li className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 opacity-40" />
@@ -35,18 +32,18 @@ export function Footer() {
           </div>
 
           <div>
-            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Horários</h3>
+            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Atendimento</h3>
             <ul className="space-y-2 text-sm font-body">
-              <li>Seg - Sex: 09h às 19h</li>
-              <li>Sábado: 09h às 14h</li>
-              <li className="opacity-40">Domingo: Fechado</li>
+              <li>Seg - Sex: Horários Flexíveis</li>
+              <li>Sábados: Sob Agendamento</li>
+              <li className="opacity-40 italic">Garanta sua vaga antecipada, bb!</li>
             </ul>
           </div>
 
           <div>
-            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Social</h3>
+            <h3 className="font-headline uppercase tracking-widest text-xs mb-6 opacity-60">Siga no Insta</h3>
             <div className="flex gap-4">
-              <Link href="#" className="w-10 h-10 rounded-full border border-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <Link href="https://www.instagram.com/ceciliasousa____/" target="_blank" className="w-10 h-10 rounded-full border border-primary/10 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Instagram className="w-5 h-5" />
               </Link>
             </div>
@@ -55,7 +52,7 @@ export function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-10 border-t border-primary/5 gap-4">
           <p className="text-[10px] uppercase tracking-[0.2em] opacity-30">
-            © 2026 CECILIA SOUSA BEAUTY. TODOS OS DIREITOS RESERVADOS.
+            © 2026 CECILIA SOUSA BEAUTY. BELEZA NATURAL SEMPRE.
           </p>
           <div className="flex gap-8 text-[10px] uppercase tracking-[0.2em] opacity-30">
             <Link href="#" className="hover:opacity-100 transition-opacity">Privacidade</Link>

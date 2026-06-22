@@ -8,25 +8,25 @@ import { Card } from "@/components/ui/card"
 
 const services = [
   {
-    id: "nanopigmentacao",
-    title: "Nanopigmentação Flow",
-    description: "A evolução da micropigmentação. Fios hiper-realistas que seguem o caimento natural, preenchendo falhas com extrema sutileza e elegância.",
-    tag: "Hiper-realismo",
+    id: "brow-lamination",
+    title: "Brow Lamination",
+    description: "Para quem quer sobrancelhas alinhadas e volumosas. Técnica que trata a saúde dos fios enquanto revela o potencial máximo do seu olhar.",
+    tag: "Best-Seller",
     imgId: "brow-lamination"
   },
   {
-    id: "visagismo-estratégico",
-    title: "Design com Visagismo",
-    description: "Análise profunda das proporções faciais para criar o design ideal. Não usamos moldes, usamos a sua anatomia para moldar seu olhar.",
-    tag: "Exclusividade",
-    imgId: "brow-design"
+    id: "lash-lifting",
+    title: "Lash Lifting",
+    description: "Cílios curvados, hidratados e pretinhos com naturalidade. Esqueça o curvex, o foco aqui é praticidade e elegância no dia a dia.",
+    tag: "Olhar Revelado",
+    imgId: "lash-lifting"
   },
   {
-    id: "brow-recovery",
-    title: "Reabilitação de Sobrancelhas",
-    description: "Protocolos exclusivos para estimular o crescimento de fios naturais e recuperar o volume perdido por designs inadequados no passado.",
-    tag: "Saúde dos Fios",
-    imgId: "lash-lifting"
+    id: "design-visagismo",
+    title: "Design Estratégico",
+    description: "Nada de moldes prontos. Uso a proporção e harmonia do seu rosto para criar o design que valoriza a sua beleza única.",
+    tag: "Proporção Real",
+    imgId: "brow-design"
   }
 ]
 
@@ -36,13 +36,13 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Assinatura Cecilia Sousa</h2>
+            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Procedimento ou Transformação?</h2>
             <h3 className="text-5xl md:text-7xl font-headline tracking-tighter text-primary">
-              Ciência e Arte em <span className="italic font-body text-foreground">Harmonia Facial</span>
+              Técnica, Saúde e <span className="italic font-body text-foreground">Harmonia Facial</span>
             </h3>
           </div>
           <p className="text-lg font-body text-muted-foreground max-w-sm mb-2">
-            Metodologia própria que une técnica avançada e sensibilidade estética para resultados indetectáveis.
+            Minha missão é revelar a sua melhor versão sem cara de "fiz procedimento". Naturalidade é a nossa regra número 1.
           </p>
         </div>
 

@@ -1,11 +1,7 @@
 
 'use server';
 /**
- * @fileOverview An AI agent that generates personalized WhatsApp message starters for potential clients.
- *
- * - generateInquiryMessage - A function that handles the message generation process.
- * - GenerateInquiryMessageInput - The input type for the generateInquiryMessage function.
- * - GenerateInquiryMessageOutput - The return type for the generateInquiryMessage function.
+ * @fileOverview Um assistente de IA que gera mensagens personalizadas no estilo "amiga especialista" da Cecilia Sousa.
  */
 
 import {ai} from '@/ai/genkit';
@@ -15,7 +11,7 @@ const GenerateInquiryMessageInputSchema = z.object({
   userConcerns: z
     .string()
     .describe(
-      "The user's specific beauty concerns (e.g., 'thin eyebrows', 'fear of artificial looks')."
+      "As preocupações específicas da cliente (ex: 'cílios retos', 'sobrancelha bagunçada')."
     ),
 });
 export type GenerateInquiryMessageInput = z.infer<
@@ -26,7 +22,7 @@ const GenerateInquiryMessageOutputSchema = z.object({
   messageStarter: z
     .string()
     .describe(
-      'A personalized WhatsApp message starter based on the user concerns.'
+      'Uma mensagem de WhatsApp personalizada no tom de voz da Cecilia.'
     ),
 });
 export type GenerateInquiryMessageOutput = z.infer<
@@ -43,19 +39,17 @@ const prompt = ai.definePrompt({
   name: 'generateInquiryMessagePrompt',
   input: {schema: GenerateInquiryMessageInputSchema},
   output: {schema: GenerateInquiryMessageOutputSchema},
-  prompt: `You are an AI assistant for Cecilia Sousa Beauty, a high-end eyebrow and facial harmony specialist.
-Cecilia is known for "Nanopigmentação Flow", "Visagismo Estratégico", and "Reabilitação de Sobrancelhas". Her brand is centered on extreme naturalness and sophisticated technique.
+  prompt: `Você é a assistente digital da Cecilia Sousa, especialista em Brow Lamination e Lash Lifting.
+O tom de voz da Cecilia é de uma "amiga especialista": confiante, direta, vendedora e informal. Ela usa termos como "diva", "bb", "SEM CONDIÇÕES" e foca muito em "processo x resultado".
 
-Your goal is to generate a personalized WhatsApp message starter for potential clients. 
-The message should:
-1. Be sophisticated, professional, yet warm.
-2. Acknowledge their concern (e.g., "fear of artificial look", "thin brows").
-3. Use terms like "Personalização", "Naturalidade", and "Consultoria Visual".
-4. Sound like the client is seeking an expert opinion.
+Seu objetivo é gerar o início de uma conversa para a cliente enviar para a Cecilia no WhatsApp.
+A mensagem deve:
+1. Ser direta e cheia de energia.
+2. Usar termos como "naturalidade", "alinhamento" e "olhar valorizado".
+3. Soar como uma cliente que já decidiu que quer transformar o olhar.
+4. Incluir expressões informais se fizer sentido (ex: "Cecilia, vi seus resultados e estou chocada, quero meu horário!").
 
-Do not include phone numbers or links. Only the message text.
-
-User Concerns: {{{userConcerns}}}`,
+Preocupação da Cliente: {{{userConcerns}}}`,
 });
 
 const generateInquiryMessageFlow = ai.defineFlow(
