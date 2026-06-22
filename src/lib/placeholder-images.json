@@ -2,50 +2,50 @@
   "placeholderImages": [
     {
       "id": "hero-portrait",
-      "description": "Professional portrait of Cecilia Sousa in a premium beauty studio",
-      "imageUrl": "https://picsum.photos/seed/cecilia1/1200/800",
-      "imageHint": "professional beauty woman"
+      "description": "Retrato oficial da Maquiadora Profissional Cecilia Sousa",
+      "imageUrl": "/images/hero-portrait.jpg",
+      "imageHint": "professional makeup artist"
     },
     {
       "id": "brow-lamination",
-      "description": "Close-up of perfectly laminated eyebrows",
-      "imageUrl": "https://picsum.photos/seed/brow1/600/400",
-      "imageHint": "eyebrow lamination"
+      "description": "Procedimento técnico de Brow Lamination",
+      "imageUrl": "/images/brow-lamination.jpg",
+      "imageHint": "brow lamination"
     },
     {
       "id": "lash-lifting",
-      "description": "Close-up of natural lash lifting result",
-      "imageUrl": "https://picsum.photos/seed/lash1/600/400",
+      "description": "Efeito natural do Lash Lifting profissional",
+      "imageUrl": "/images/lash-lifting.jpg",
       "imageHint": "lash lifting"
     },
     {
       "id": "brow-design",
-      "description": "Artistic brow design and mapping",
-      "imageUrl": "https://picsum.photos/seed/brow2/600/400",
+      "description": "Design Estratégico com Visagismo",
+      "imageUrl": "/images/brow-design.jpg",
       "imageHint": "eyebrow design"
     },
     {
       "id": "gallery-before",
-      "description": "Before treatment eyebrows",
-      "imageUrl": "https://picsum.photos/seed/before1/800/600",
-      "imageHint": "thin eyebrows"
+      "description": "Estado inicial das sobrancelhas",
+      "imageUrl": "/images/gallery-before.jpg",
+      "imageHint": "eyebrows before"
     },
     {
       "id": "gallery-after",
-      "description": "After treatment eyebrows showing natural transformation",
-      "imageUrl": "https://picsum.photos/seed/after1/800/600",
-      "imageHint": "perfect eyebrows"
+      "description": "Resultado após técnica de elite",
+      "imageUrl": "/images/gallery-after.jpg",
+      "imageHint": "eyebrows after"
     },
     {
       "id": "client-testimonial-1",
-      "description": "Happy client portrait",
-      "imageUrl": "https://picsum.photos/seed/client1/100/100",
+      "description": "Cliente após Maquiagem Social",
+      "imageUrl": "/images/client-1.jpg",
       "imageHint": "smiling woman"
     },
     {
       "id": "client-testimonial-2",
-      "description": "Happy client portrait",
-      "imageUrl": "https://picsum.photos/seed/client2/100/100",
+      "description": "Cliente com olhar valorizado",
+      "imageUrl": "/images/client-2.jpg",
       "imageHint": "beauty portrait"
     }
   ]
