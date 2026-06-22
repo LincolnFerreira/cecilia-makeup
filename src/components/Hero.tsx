@@ -20,39 +20,39 @@ export function Hero() {
         <div className="lg:col-span-7 z-10 animate-fade-in">
           <div className="inline-flex items-center gap-4 mb-6">
             <div className="h-px w-12 bg-primary" />
-            <span className="font-headline uppercase tracking-[0.3em] text-sm text-primary">Especialista em Olhar</span>
+            <span className="font-headline uppercase tracking-[0.3em] text-sm text-primary">Master em Harmonização do Olhar</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
-            A Arte da <br />
-            <span className="italic font-body font-light text-foreground opacity-90">Sutileza</span>
+            A Estética da <br />
+            <span className="italic font-body font-light text-foreground opacity-90">Naturalidade</span>
           </h1>
 
           <p className="text-xl md:text-2xl font-body text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Especialista em realçar sua beleza natural através de técnicas avançadas de Brow Lamination e Lash Lifting. Descubra a sua melhor versão.
+            Especialista em Nanopigmentação e Visagismo. Técnica refinada para realçar sua essência sem transformar quem você é. 
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
             <Link href="#booking">
               <button className="bg-primary text-primary-foreground px-10 py-5 rounded-full font-headline text-lg uppercase tracking-widest flex items-center justify-center gap-3 hover:gap-5 transition-all shadow-xl hover:shadow-primary/20">
-                Agende sua sessão
+                Agende sua Consultoria
                 <ChevronRight className="w-5 h-5" />
               </button>
             </Link>
             <Link href="#services" className="flex items-center justify-center px-10 py-5 rounded-full font-headline text-lg uppercase tracking-widest border border-primary/20 hover:bg-primary/5 transition-colors">
-              Explorar Técnicas
+              Conheça as Técnicas
             </Link>
           </div>
 
           <div className="mt-16 flex items-center gap-8 border-t border-primary/10 pt-8 max-w-md">
             <div>
-              <div className="text-3xl font-headline text-primary">500+</div>
-              <div className="text-xs uppercase tracking-widest opacity-60">Olhares Transformados</div>
+              <div className="text-3xl font-headline text-primary">Master</div>
+              <div className="text-xs uppercase tracking-widest opacity-60">Especialista Certificada</div>
             </div>
             <div className="h-12 w-px bg-primary/10" />
             <div>
               <div className="text-3xl font-headline text-primary">100%</div>
-              <div className="text-xs uppercase tracking-widest opacity-60">Efeito Natural</div>
+              <div className="text-xs uppercase tracking-widest opacity-60">Foco em Personalização</div>
             </div>
           </div>
         </div>

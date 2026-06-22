@@ -8,25 +8,25 @@ import { Card } from "@/components/ui/card"
 
 const services = [
   {
-    id: "brow-lamination",
-    title: "Brow Lamination",
-    description: "Técnica que realinha os fios naturais da sobrancelha, proporcionando volume, preenchimento e um visual editorial sofisticado.",
-    tag: "Volume & Design",
+    id: "nanopigmentacao",
+    title: "Nanopigmentação Flow",
+    description: "A evolução da micropigmentação. Fios hiper-realistas que seguem o caimento natural, preenchendo falhas com extrema sutileza e elegância.",
+    tag: "Hiper-realismo",
     imgId: "brow-lamination"
   },
   {
-    id: "lash-lifting",
-    title: "Lash Lifting",
-    description: "Realça a curvatura e o brilho dos seus cílios naturais, criando um efeito de alongamento e máscara duradouro sem extensões.",
-    tag: "Olhar Curvado",
-    imgId: "lash-lifting"
+    id: "visagismo-estratégico",
+    title: "Design com Visagismo",
+    description: "Análise profunda das proporções faciais para criar o design ideal. Não usamos moldes, usamos a sua anatomia para moldar seu olhar.",
+    tag: "Exclusividade",
+    imgId: "brow-design"
   },
   {
-    id: "brow-design",
-    title: "Design Estratégico",
-    description: "Mapeamento facial minucioso para criar a moldura perfeita para o seu rosto, respeitando sua anatomia e expressões.",
-    tag: "Precisão Facial",
-    imgId: "brow-design"
+    id: "brow-recovery",
+    title: "Reabilitação de Sobrancelhas",
+    description: "Protocolos exclusivos para estimular o crescimento de fios naturais e recuperar o volume perdido por designs inadequados no passado.",
+    tag: "Saúde dos Fios",
+    imgId: "lash-lifting"
   }
 ]
 
@@ -36,13 +36,13 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Expertise Técnica</h2>
+            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Assinatura Cecilia Sousa</h2>
             <h3 className="text-5xl md:text-7xl font-headline tracking-tighter text-primary">
-              Procedimentos de <span className="italic font-body text-foreground">Alta Performance</span>
+              Ciência e Arte em <span className="italic font-body text-foreground">Harmonia Facial</span>
             </h3>
           </div>
           <p className="text-lg font-body text-muted-foreground max-w-sm mb-2">
-            Utilizamos os melhores produtos do mercado mundial para garantir saúde e estética impecável aos seus fios.
+            Metodologia própria que une técnica avançada e sensibilidade estética para resultados indetectáveis.
           </p>
         </div>
 

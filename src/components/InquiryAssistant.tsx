@@ -31,16 +31,16 @@ export function InquiryAssistant() {
   }
 
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 bg-accent/10">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-accent text-primary text-sm font-headline mb-4">
             <Sparkles className="w-4 h-4" />
-            Assistente Pessoal
+            Concierge Digital
           </div>
-          <h2 className="text-4xl md:text-5xl font-headline mb-4">Sente insegurança com o olhar?</h2>
+          <h2 className="text-4xl md:text-5xl font-headline mb-4">Dúvidas sobre o seu Olhar?</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Seja sobrancelhas falhadas ou medo de um resultado artificial, descreva suas preocupações e eu criarei uma mensagem personalizada para começarmos nossa conversa.
+            Compartilhe suas inseguranças ou o que gostaria de melhorar. Nossa IA gerará um ponto de partida personalizado para sua consultoria com a Cecilia.
           </p>
         </div>
 
@@ -48,10 +48,10 @@ export function InquiryAssistant() {
           <Card className="p-6 border-dashed flex flex-col justify-between">
             <div>
               <label className="text-sm font-headline uppercase tracking-widest block mb-3 opacity-70">
-                Sua preocupação
+                O que te incomoda hoje?
               </label>
               <Textarea 
-                placeholder="Ex: Tenho sobrancelhas muito ralas e tenho medo de ficar com aspecto artificial..."
+                placeholder="Ex: Minhas sobrancelhas são ralas e tenho medo de que qualquer procedimento fique artificial..."
                 className="min-h-[150px] resize-none mb-4 focus:ring-primary/20"
                 value={concern}
                 onChange={(e) => setConcern(e.target.value)}
@@ -63,29 +63,29 @@ export function InquiryAssistant() {
               disabled={loading || !concern}
             >
               {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Sparkles className="w-5 h-5" />}
-              Gerar Mensagem Ideal
+              Gerar Início de Conversa
             </Button>
           </Card>
 
-          <Card className={`p-6 bg-muted/50 transition-all duration-500 flex flex-col justify-between border-none ${generatedMessage ? 'opacity-100 translate-y-0' : 'opacity-40 translate-y-2'}`}>
+          <Card className={`p-6 bg-background transition-all duration-500 flex flex-col justify-between shadow-xl ${generatedMessage ? 'opacity-100 translate-y-0' : 'opacity-40 translate-y-2'}`}>
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <MessageSquare className="w-5 h-5 text-primary" />
-                <span className="text-sm font-headline uppercase tracking-widest opacity-70">Sua mensagem está pronta</span>
+                <span className="text-sm font-headline uppercase tracking-widest opacity-70">Sua solicitação de consultoria</span>
               </div>
-              <div className="bg-background p-4 rounded-lg italic text-muted-foreground min-h-[120px]">
-                {generatedMessage || "Sua mensagem aparecerá aqui para você revisar antes de enviar..."}
+              <div className="bg-muted/30 p-4 rounded-lg italic text-muted-foreground min-h-[120px] text-sm leading-relaxed">
+                {generatedMessage || "O texto sugerido para Cecilia aparecerá aqui..."}
               </div>
             </div>
             
             {generatedMessage && (
               <Button 
-                variant="secondary"
+                variant="default"
                 className="w-full gap-2 py-6 mt-4 font-headline text-lg"
                 onClick={handleSend}
               >
                 <Send className="w-5 h-5" />
-                Enviar para Cecilia no WhatsApp
+                Iniciar Atendimento no WhatsApp
               </Button>
             )}
           </Card>
