@@ -17,25 +17,28 @@ export function BeforeAfter() {
     setSliderPos(pos)
   }
 
-  const onMouseMove = (e: React.MouseEvent) => handleMove(e.clientX)
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (e.buttons === 1) handleMove(e.clientX)
+  }
   const onTouchMove = (e: React.TouchEvent) => handleMove(e.touches[0].clientX)
 
   const beforeImg = PlaceHolderImages.find(img => img.id === 'gallery-before')
   const afterImg = PlaceHolderImages.find(img => img.id === 'gallery-after')
 
   return (
-    <section className="py-24 px-4 bg-muted/30">
+    <section id="gallery" className="py-24 px-4 bg-muted/30">
       <div className="max-w-4xl mx-auto text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-headline mb-4">A Harmonia em Detalhes</h2>
         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-          Arraste para ver a sutil e impactante transformação de um olhar verdadeiramente valorizado.
+          Arraste para ver como a técnica correta e o visagismo estratégico podem valorizar seu olhar de forma sofisticada.
         </p>
       </div>
 
       <div 
         ref={containerRef}
         className="relative aspect-[4/3] max-w-3xl mx-auto overflow-hidden rounded-2xl shadow-2xl cursor-ew-resize select-none border-4 border-background"
-        onMouseMove={onMouseMove}
+        onMouseMove={handleMouseMove}
+        onMouseDown={(e) => handleMove(e.clientX)}
         onTouchMove={onTouchMove}
       >
         {/* After Image (Visible) */}

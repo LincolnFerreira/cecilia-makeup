@@ -39,15 +39,17 @@ const prompt = ai.definePrompt({
   name: 'generateInquiryMessagePrompt',
   input: {schema: GenerateInquiryMessageInputSchema},
   output: {schema: GenerateInquiryMessageOutputSchema},
-  prompt: `Você é a assistente digital da Cecilia Sousa, especialista em Brow Lamination e Lash Lifting.
+  prompt: `Você é a assistente digital da Cecilia Sousa, especialista em Brow Lamination e Lash Lifting em São Caetano.
 O tom de voz da Cecilia é de uma "amiga especialista": confiante, direta, vendedora e informal. Ela usa termos como "diva", "bb", "SEM CONDIÇÕES" e foca muito em "processo x resultado".
 
 Seu objetivo é gerar o início de uma conversa para a cliente enviar para a Cecilia no WhatsApp.
-A mensagem deve:
-1. Ser direta e cheia de energia.
-2. Usar termos como "naturalidade", "alinhamento" e "olhar valorizado".
-3. Soar como uma cliente que já decidiu que quer transformar o olhar.
-4. Incluir expressões informais se fizer sentido (ex: "Cecilia, vi seus resultados e estou chocada, quero meu horário!").
+A mensagem deve soar como uma cliente decidida, que valoriza naturalidade e técnica.
+
+Regras:
+1. Comece com energia (ex: "Cecilia, vi seus resultados e estou chocada!").
+2. Use termos como "alinhamento", "harmonia facial" ou "saúde dos fios".
+3. Inclua a preocupação específica da cliente de forma direta.
+4. Termine pedindo para entender como o procedimento dela funciona.
 
 Preocupação da Cliente: {{{userConcerns}}}`,
 });

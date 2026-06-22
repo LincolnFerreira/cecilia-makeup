@@ -19,7 +19,7 @@ export function Hero() {
         <div className="lg:col-span-7 z-10 animate-fade-in">
           <div className="inline-flex items-center gap-2 mb-6 px-4 py-1 rounded-full bg-primary/5 border border-primary/10">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 divas atendidas</span>
+            <span className="font-headline uppercase tracking-[0.2em] text-xs text-primary">+1000 olhares transformados</span>
           </div>
           
           <h1 className="text-6xl md:text-8xl lg:text-9xl font-headline leading-[0.9] text-primary mb-8 tracking-tighter">
@@ -28,7 +28,7 @@ export function Hero() {
           </h1>
 
           <p className="text-xl md:text-2xl font-body text-muted-foreground max-w-xl mb-10 leading-relaxed">
-            Elegância, proporção e o alinhamento que seu olhar merece. Técnica de elite para quem busca naturalidade SEM CONDIÇÕES.
+            Elegância, proporção e o alinhamento que seu olhar merece. Técnica de elite para quem busca naturalidade <span className="text-primary font-bold">SEM CONDIÇÕES</span>.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">
@@ -48,7 +48,7 @@ export function Hero() {
             <div className="h-12 w-px bg-primary/10" />
             <div>
               <div className="text-2xl font-headline text-primary">São Caetano</div>
-              <div className="text-[10px] uppercase tracking-widest opacity-60">Atendimento Exclusivo</div>
+              <div className="text-[10px] uppercase tracking-widest opacity-60">Atendimento @makeupjaque</div>
             </div>
           </div>
         </div>

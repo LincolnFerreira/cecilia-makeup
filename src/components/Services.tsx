@@ -10,21 +10,21 @@ const services = [
   {
     id: "brow-lamination",
     title: "Brow Lamination",
-    description: "Para quem quer sobrancelhas alinhadas e volumosas. Técnica que trata a saúde dos fios enquanto revela o potencial máximo do seu olhar.",
-    tag: "Best-Seller",
+    description: "Para quem busca sobrancelhas alinhadas, volumosas e com aspecto saudável. Técnica que trata a saúde dos fios enquanto revela o potencial máximo do seu olhar.",
+    tag: "Saúde & Estética",
     imgId: "brow-lamination"
   },
   {
     id: "lash-lifting",
     title: "Lash Lifting",
-    description: "Cílios curvados, hidratados e pretinhos com naturalidade. Esqueça o curvex, o foco aqui é praticidade e elegância no dia a dia.",
+    description: "Cílios curvados, hidratados e pretinhos com total naturalidade. O foco aqui é praticidade e elegância no dia a dia, valorizando o que você já tem.",
     tag: "Olhar Revelado",
     imgId: "lash-lifting"
   },
   {
     id: "design-visagismo",
     title: "Design Estratégico",
-    description: "Nada de moldes prontos. Uso a proporção e harmonia do seu rosto para criar o design que valoriza a sua beleza única.",
+    description: "Sem moldes prontos. Uso visagismo, proporção e a harmonia do seu rosto para criar um design exclusivo que valoriza sua beleza única.",
     tag: "Proporção Real",
     imgId: "brow-design"
   }
@@ -36,13 +36,13 @@ export function Services() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
           <div className="max-w-2xl">
-            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Procedimento ou Transformação?</h2>
+            <h2 className="text-sm font-headline uppercase tracking-[0.4em] text-primary mb-6">Técnica, Saúde e Harmonia</h2>
             <h3 className="text-5xl md:text-7xl font-headline tracking-tighter text-primary">
-              Técnica, Saúde e <span className="italic font-body text-foreground">Harmonia Facial</span>
+              Beleza Natural com <span className="italic font-body text-foreground">Acabamento Elegante</span>
             </h3>
           </div>
           <p className="text-lg font-body text-muted-foreground max-w-sm mb-2">
-            Minha missão é revelar a sua melhor versão sem cara de "fiz procedimento". Naturalidade é a nossa regra número 1.
+            Minha missão é revelar sua melhor versão através de um olhar sofisticado e limpo. Naturalidade é a regra aqui, bb.
           </p>
         </div>
 
