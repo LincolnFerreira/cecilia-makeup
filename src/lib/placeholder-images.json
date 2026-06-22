@@ -1,3 +1,52 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-portrait",
+      "description": "Professional portrait of Cecilia Sousa in a premium beauty studio",
+      "imageUrl": "https://picsum.photos/seed/cecilia1/1200/800",
+      "imageHint": "professional beauty woman"
+    },
+    {
+      "id": "brow-lamination",
+      "description": "Close-up of perfectly laminated eyebrows",
+      "imageUrl": "https://picsum.photos/seed/brow1/600/400",
+      "imageHint": "eyebrow lamination"
+    },
+    {
+      "id": "lash-lifting",
+      "description": "Close-up of natural lash lifting result",
+      "imageUrl": "https://picsum.photos/seed/lash1/600/400",
+      "imageHint": "lash lifting"
+    },
+    {
+      "id": "brow-design",
+      "description": "Artistic brow design and mapping",
+      "imageUrl": "https://picsum.photos/seed/brow2/600/400",
+      "imageHint": "eyebrow design"
+    },
+    {
+      "id": "gallery-before",
+      "description": "Before treatment eyebrows",
+      "imageUrl": "https://picsum.photos/seed/before1/800/600",
+      "imageHint": "thin eyebrows"
+    },
+    {
+      "id": "gallery-after",
+      "description": "After treatment eyebrows showing natural transformation",
+      "imageUrl": "https://picsum.photos/seed/after1/800/600",
+      "imageHint": "perfect eyebrows"
+    },
+    {
+      "id": "client-testimonial-1",
+      "description": "Happy client portrait",
+      "imageUrl": "https://picsum.photos/seed/client1/100/100",
+      "imageHint": "smiling woman"
+    },
+    {
+      "id": "client-testimonial-2",
+      "description": "Happy client portrait",
+      "imageUrl": "https://picsum.photos/seed/client2/100/100",
+      "imageHint": "beauty portrait"
+    }
+  ]
 }
